@@ -6,7 +6,8 @@ React+Redux scaffolding generator for boosting your development.
 
 ```sh
 $ npm install -g yo
-$ npm install -g git+https://git@github.com/hustlzp/generator-rr.git
+$ git clone https://github.com/hustlzp/generator-rr.git
+$ npm install
 $ npm link
 ```
 
