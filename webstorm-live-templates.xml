@@ -1,0 +1,80 @@
+<template name="redux:action" value="/**&#10; * $actionComment$&#10; */&#10;&#10;export const $action$ = &quot;$action$&quot;&#10;&#10;export function $actionMethodName$() {&#10;    doSomething()&#10;    &#10;    return {type: $action$}&#10;}&#10;&#10;$END$" toReformat="false" toShortenFQNames="true">
+    <variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="actionMethodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JAVA_SCRIPT" value="true" />
+        <option name="JS_EXPRESSION" value="true" />
+        <option name="JSX_HTML" value="true" />
+        <option name="JS_STATEMENT" value="true" />
+    </context>
+</template>
+<template name="redux:asyncActions" value="/**&#10; * $actionComment$&#10; */&#10;&#10;export const $actionPerfix$_START = &quot;$actionPerfix$_START&quot;&#10;export const $actionPerfix$_SUCCESS = &quot;$actionPerfix$_SUCCESS&quot;&#10;export const $actionPerfix$_ERROR = &quot;$actionPerfix$_ERROR&quot;&#10;&#10;export function $actionAsyncMethodName$Start() {&#10;    return {type: $actionPerfix$_START}&#10;}&#10;&#10;export function $actionAsyncMethodName$Success() {&#10;    return {type: $actionPerfix$_SUCCESS}&#10;}&#10;&#10;export function $actionAsyncMethodName$Error(error) {&#10;    return {type: $actionPerfix$_ERROR, error}&#10;}&#10;&#10;export function $actionAsyncMethodName$() {&#10;    return dispatch =&gt; {&#10;        dispatch($actionAsyncMethodName$Start())&#10;&#10;        doSomething(function () {&#10;            dispatch($actionAsyncMethodName$Success())&#10;        }, function (error) {&#10;            dispatch($actionAsyncMethodName$Error(error))&#10;        })&#10;    }&#10;}&#10;&#10;$END$" toReformat="false" toShortenFQNames="true">
+<variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="actionPerfix" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="actionAsyncMethodName" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
+<template name="redux:component" value="import React from 'react'&#10;import Radium from 'radium'&#10;&#10;@Radium&#10;export default class $ComponentName$ extends React.Component {&#10;    state = {&#10;    }&#10;    &#10;    static defaultProps = {&#10;    }&#10;    &#10;    static propTypes = {&#10;        someFunc: React.PropTypes.func.isRequired&#10;    }&#10;    &#10;    render() {&#10;        const { someFunc } = this.props&#10;&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        )&#10;    }&#10;}&#10;&#10;const styles = {&#10;    &#10;}&#10;" toReformat="false" toShortenFQNames="true">
+<variable name="ComponentName" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
+<template name="redux:container" value="import React from 'react'&#10;import { connect } from 'react-redux'&#10;import { bindActionCreators } from 'redux'&#10;import Radium from 'radium'&#10;&#10;@Radium&#10;export default class $ContainerName$ extends React.Component {&#10;    state = {&#10;    }&#10;    &#10;    componentDidMount() {&#10;        const { dispatch } = this.props&#10;        &#10;    }&#10;&#10;    render() {&#10;        const { dispatch } = this.props&#10;&#10;        return (&#10;            &lt;div&gt;&#10;                $END$&#10;            &lt;/div&gt;&#10;        )&#10;    }&#10;}&#10;&#10;const mapStateToProps = (state) =&gt; {&#10;    return {&#10;        users: state.users&#10;    }&#10;}&#10;&#10;const styles = {&#10;}&#10;&#10;export default connect(mapStateToProps)($ContainerName$)&#10;" toReformat="false" toShortenFQNames="true">
+<variable name="ContainerName" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
+<template name="redux:reducer" value="import update from 'react-addons-update'&#10;import * as actionType from '../actions/$actionModuleName$'&#10;import { createReducer } from '../utils'&#10;&#10;export default createReducer({}, {&#10;    // $actionComment$&#10;    [$actionPerfix$_START](state, action) {&#10;        return state&#10;    },&#10;    [$actionPerfix$_SUCCESS](state, action) {&#10;        return state$END$&#10;    },&#10;    [$actionPerfix$_ERROR](state, action) {&#10;        return state&#10;    },&#10;    &#10;})&#10;" toReformat="false" toShortenFQNames="true">
+<variable name="actionModuleName" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="actionPerfix" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
+<template name="redux:reducerAsyncCases" value="// $actionComment$&#10;[$actionPerfix$_START](state, action) {&#10;    return state&#10;},&#10;[$actionPerfix$_SUCCESS](state, action) {&#10;    return state$END$&#10;},&#10;[$actionPerfix$_ERROR](state, action) {&#10;    return state&#10;},&#10;" toReformat="false" toShortenFQNames="true">
+<variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="actionPerfix" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
+<template name="redux:reducerCase" value="// $actionComment$&#10;[$action$](state, action) {&#10;    return state$END$&#10;},&#10;" toReformat="false" toShortenFQNames="true">
+<variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
+<variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
+<template name="redux:tableComponent" value="import React from 'react'&#10;import Radium from 'radium'&#10;&#10;@Radium&#10;export default class $componentName$ extends React.Component {&#10;    state = {&#10;    }&#10;    &#10;    static defaultProps = {&#10;    }&#10;    &#10;    static propTypes = {&#10;        someFunc: React.PropTypes.func.isRequired&#10;    }&#10;    &#10;    render() {&#10;        const { items, someFunc } = this.props&#10;        const rows = items.map(item =&gt; {&#10;            return (&#10;                &lt;tr key={item.id}&gt;&#10;                    &lt;td&gt;&#10;                        $END$&#10;                    &lt;/td&gt;&#10;                    &lt;td&gt;&#10;                    &#10;                    &lt;/td&gt;&#10;                &lt;/tr&gt;&#10;            )&#10;        })&#10;&#10;        return (&#10;            &lt;table&gt;&#10;                &lt;thead&gt;&#10;                &lt;tr&gt;&#10;                    &lt;th&gt;&lt;/th&gt;&#10;                    &lt;th&gt;&lt;/th&gt;&#10;                &lt;/tr&gt;&#10;                &lt;/thead&gt;&#10;                &lt;tbody&gt;{rows}&lt;/tbody&gt;&#10;            &lt;/table&gt;&#10;        )&#10;    }&#10;}&#10;&#10;const styles = {&#10;&#10;}" toReformat="false" toShortenFQNames="true">
+<variable name="componentName" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="JS_EXPRESSION" value="true" />
+    <option name="JSX_HTML" value="true" />
+    <option name="JS_STATEMENT" value="true" />
+</context>
+</template>
