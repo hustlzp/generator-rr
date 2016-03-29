@@ -7,6 +7,7 @@ React+Redux scaffolding generator for boosting your development.
 ```sh
 $ npm install -g yo
 $ npm install -g git+https://git@github.com/hustlzp/generator-rr.git
+$ npm link
 ```
 
 If you use [WebStorm], you can import `webstorm-live-templates.xml` to `Preferences -> Editor -> Live Templates`.
