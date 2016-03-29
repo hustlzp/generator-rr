@@ -1,0 +1,5 @@
+{
+  "src": "webpack-output",
+  "dest": "qiniu:access_key=&secret_key=&key_prefix=&bucket=",
+  "debug_level": 0
+}
