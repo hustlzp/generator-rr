@@ -1,6 +1,6 @@
 # generator-rr
 
-React+Redux scaffolding generator for boosting your development.
+React+Redux scaffolding generator based on [Yeoman](http://yeoman.io).
 
 ###Installation
 
