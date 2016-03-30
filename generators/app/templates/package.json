@@ -30,6 +30,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.1",
     "css-loader": "^0.23.1",
+    "color": "^0.11.1",
     "express": "^4.13.4",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.14.0",
