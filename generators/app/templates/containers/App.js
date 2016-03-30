@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Radium from 'radium'
 
+@Radium
 export default class App extends React.Component {
     state = {}
 
