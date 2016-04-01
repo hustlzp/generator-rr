@@ -14,25 +14,25 @@ Batteries included:
 ###Installation
 
 ```sh
-$ npm install -g yo
-$ git clone https://github.com/hustlzp/generator-rr.git
-$ npm install
-$ npm link
+npm install -g yo
+git clone https://github.com/hustlzp/generator-rr.git
+npm install
+npm link
 ```
 
 ###Setup Project
 
 ```sh
-$ mkdir my-new-project && cd my-new-project
-$ yo rr
+mkdir my-new-project && cd my-new-project
+yo rr
 ```
 
 ###Generate Reducer/Container/Component
 
 ```sh
-$ yo rr:reducer <name>
-$ yo rr:container <name>
-$ yo rr:component <name>
+yo rr:reducer <name>
+yo rr:container <name>
+yo rr:component <name>
 ```
 
 ###Live Templates
