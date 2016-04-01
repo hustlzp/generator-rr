@@ -35,7 +35,7 @@ yo rr:container <name>
 yo rr:component <name>
 ```
 
-###Live Templates
+###WebStorm Live Templates
 
 If you are using WebStorm, you can [import](https://www.jetbrains.com/help/phpstorm/2016.1/sharing-live-templates.html) `webstorm-live-templates.xml` to `Preferences -> Editor -> Live Templates`.
 
