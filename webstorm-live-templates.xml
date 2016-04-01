@@ -20,7 +20,7 @@
     <option name="JS_STATEMENT" value="true" />
 </context>
 </template>
-<template name="redux:reducerCase" value="// $actionComment$&#10;[$action$](state, action) {&#10;    return state$END$&#10;},&#10;" toReformat="false" toShortenFQNames="true">
+<template name="redux:reducerHandle" value="// $actionComment$&#10;[$action$](state, action) {&#10;    return state$END$&#10;},&#10;" toReformat="false" toShortenFQNames="true">
 <variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
 <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
 <context>
@@ -30,7 +30,7 @@
     <option name="JS_STATEMENT" value="true" />
 </context>
 </template>
-<template name="redux:reducerAsyncCases" value="// $actionComment$&#10;[$actionPerfix$_START](state, action) {&#10;    return state&#10;},&#10;[$actionPerfix$_SUCCESS](state, action) {&#10;    return state$END$&#10;},&#10;[$actionPerfix$_ERROR](state, action) {&#10;    return state&#10;},&#10;" toReformat="false" toShortenFQNames="true">
+<template name="redux:reducerAsyncHandles" value="// $actionComment$&#10;[$actionPerfix$_START](state, action) {&#10;    return state&#10;},&#10;[$actionPerfix$_SUCCESS](state, action) {&#10;    return state$END$&#10;},&#10;[$actionPerfix$_ERROR](state, action) {&#10;    return state&#10;},&#10;" toReformat="false" toShortenFQNames="true">
 <variable name="actionComment" expression="" defaultValue="" alwaysStopAt="true" />
 <variable name="actionPerfix" expression="" defaultValue="" alwaysStopAt="true" />
 <context>

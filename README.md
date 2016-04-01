@@ -44,9 +44,9 @@ Then you can use these templates:
 
 ```sh
 redux:action
-redux:asyncAction
-redux:reducerCase
-redux:reducerAsyncCases
+redux:asyncActions
+redux:reducerHandle
+redux:reducerAsyncHandles
 ```
 
 ###Start Development Server
