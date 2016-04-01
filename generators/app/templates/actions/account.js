@@ -12,7 +12,7 @@ export function logIn(user) {
         auth.logIn(user)
 
         dispatch({type: LOG_IN, user})
-        dispatch(push('/interview'))
+        dispatch(push('/'))
     }
 }
 
