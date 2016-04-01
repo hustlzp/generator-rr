@@ -62,3 +62,7 @@ npm start
 * Update config in `qrsync.conf` to your Qiniu config
 * Update domain and project path in `nginx.conf`, copy it to server, and then restart Nginx
 * Run `npm run deploy`
+
+###License
+
+MIT
