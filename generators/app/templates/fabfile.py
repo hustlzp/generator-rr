@@ -2,7 +2,7 @@
 from fabric.api import run, env, cd, settings
 
 def deploy():
-    env.host_string = "root@yourip"
+    env.host_string = "user@ip"
     with cd('/path/to/your/project'):
         run('git reset --hard HEAD')
         run('git pull')
