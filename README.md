@@ -6,10 +6,11 @@ Batteries included:
 
 * react-router
 * ES6 via Babel-Loader
+* No switch/case in reducer
 * [Radium](https://github.com/FormidableLabs/radium) to handle CSS
 * Redux-DevTools included
 * Webpack with [HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html) enable
-* No switch/case in reducer
+* [Fabric](https://www.fabfile.org/) for deployment
 * [Qiniu](http://www.qiniu.com) supported
 
 ###Installation
