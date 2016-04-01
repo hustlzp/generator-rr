@@ -51,7 +51,7 @@ redux:reducerAsyncCases
 ###Start Development Server
 
 ```sh
-$ npm start
+npm start
 ```
 
 ###Deployment
