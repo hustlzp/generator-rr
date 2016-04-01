@@ -4,9 +4,9 @@ React+Redux scaffolding generator based on [Yeoman](http://yeoman.io).
 
 Batteries included:
 
-* react-router
-* Radium
 * ES6
+* react-router
+* [Radium](https://github.com/FormidableLabs/radium)
 * Webpack with [HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html) enable
 * No switch/case in reducer
 * [Qiniu](http://www.qiniu.com) supported
