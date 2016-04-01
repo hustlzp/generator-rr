@@ -20,18 +20,20 @@ $ npm install
 $ npm link
 ```
 
-###Set up project
+###Setup Project
 
 ```sh
 $ mkdir my-new-project && cd my-new-project
 $ yo rr
 ```
 
-###Generate Reducer/Container Component/Presentation Component
+###Generate Reducer/Container/Component
 
+```sh
 $ yo rr:reducer <name>
 $ yo rr:container <name>
 $ yo rr:component <name>
+```
 
 ###Live Templates
 
