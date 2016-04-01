@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 
 @Radium
-export default class ExampleComonent extends React.Component {
+export default class ExampleComponent extends React.Component {
     state = {
     }
 
