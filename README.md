@@ -58,7 +58,7 @@ npm start
 
 ###Deployment
 
-* Update `output.publicPath` in `webpack.config.prod.js` to your Qiniu url (such as `http://7xsiur.com2.z0.glb.qiniucdn.com`)
+* Update `output.publicPath` in `webpack.config.prod.js` to your Qiniu url (such as `http://7xsiur.com2.z0.glb.qiniucdn.com/`)
 * Update `env.host_string` and project path in `fabfile.py` to the user and IP of your server
 * Update config in `qrsync.conf` to your Qiniu config
 * Update domain and project path in `nginx.conf`, copy it to server, and then restart Nginx
