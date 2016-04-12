@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 const RadiumLink = Radium(Link)
 
 @Radium
-export default class HomePage extends React.Component {
+class HomePage extends React.Component {
     state = {}
 
     componentDidMount() {
@@ -29,7 +29,7 @@ export default class HomePage extends React.Component {
 const styles = {}
 
 function mapStateToProps(state) {
-    return state.account
+    return {}
 }
 
 export default connect(mapStateToProps)(HomePage)

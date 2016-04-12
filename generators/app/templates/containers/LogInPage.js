@@ -6,7 +6,7 @@ import {logIn} from '../actions/account'
 const Style = Radium.Style
 
 @Radium
-export default class LogInPage extends React.Component {
+class LogInPage extends React.Component {
     state = {
         token: ''
     }

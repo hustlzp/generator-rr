@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import Radium from 'radium'
 
 @Radium
-export default class <%= name %> extends React.Component {
+class <%= name %> extends React.Component {
     state = {
     }
 
