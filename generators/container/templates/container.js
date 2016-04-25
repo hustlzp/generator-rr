@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 import Radium from 'radium'
 
 @Radium
@@ -8,12 +8,12 @@ class <%= name %> extends React.Component {
     }
 
     componentDidMount() {
-        const { dispatch } = this.props
+        const {dispatch} = this.props
 
     }
 
     render() {
-        const { dispatch } = this.props
+        const {dispatch} = this.props
 
         return (
             <div>
